@@ -2,6 +2,7 @@ class PinsController < ApplicationController
 	before_action :find_pin, only: [:show, :edit, :update, :destroy]
 
 	def index
+		@pins = Pin.all
 	end
 
 	def new
