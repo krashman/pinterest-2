@@ -1,4 +1,6 @@
 class PinsController < ApplicationController
+	before_action :find_pin, only: [:show, :edit, :update, :destroy]
+
 	def index
 	end
 
@@ -17,7 +19,15 @@ class PinsController < ApplicationController
 	end
 
 	def show
-		find_pin
+	end
+
+	def edit
+	end
+
+	def update
+	end
+
+	def destroy
 	end
 
 	private
